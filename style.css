@@ -112,7 +112,7 @@ li span:first-child {
 .tache-cachee {
   display: none;
 }
-img[alt="ajouter logo"]{
+#ajouter-logo{
   width: 25px;
   height: 25px;
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon-->
+    <link rel="icon" href="images/checklist.jpg"/>
+
+    <!-- -------------------------- CDN ---------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ma liste de tâches</title>
+</head>
+<body>
+    <section class="container">
+        <!-- <h6 class="text-center">Bonjour <span id="nom"></span></h6> -->
+        <br>
+        <h1 class="h1 mb-2 py-3 text-center">Ma liste de tâches <br> (To Do List)</h1>
+        <div class="d-flex justify-content-center align-items-center text-center my-2">
+            <span id="alert"></span>
+        </div>
+        <div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <input class="form-control h-25 my-md-2" type="text" name="new-tache" id="new-tache" placeholder="Nouvelle tâche" required="required">
+              <div class="w-75 d-flex flex-wrap">
+                <button type="button" class="rounded-circle btn btn-primary my-md-2" id="ajout"><img src="images/ajouter.png" alt="ajouter logo"></button>
+                <button type="button" class="rounded-3 btn btn-danger my-md-2" id="reset">Supp. tâches terminés</button>
+                <button type="button" class="rounded-3 btn btn-secondary my-md-2" id="btnAlterner">Tâches archivées</button>
+              </div>  
+            </div>
+        </div>
+        <form action="" method="get" class=" d-flex justify-content-star align-items-center">
+            <input class="m-1" type="radio" id="checkbox-tous" name="statut" checked>
+            <label class="me-5" for="checkbox-tous">Tous</label>
+
+            <input class="m-1" type="radio" id="checkbox-actives" name="statut">
+            <label class="me-5" for="checkbox-actives">Actives</label>
+
+            <input class="m-1" type="radio" id="checkbox-termines" name="statut">
+            <label class="me-5" for="checkbox-termines">Terminées</label>
+        </form>
+        <div id="todolist" class="my-4">
+            <!-- liste de tache -->
+            <h3>Tâches principales</h3>
+        </div>
+        <div id="archives" class="my-4 d-none">
+            <!-- Liste de tache archive -->
+            <h3>Tâches archivées</h3>
+        </div>
+    </section>
+    <!-- <script src="LocalStorage.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>

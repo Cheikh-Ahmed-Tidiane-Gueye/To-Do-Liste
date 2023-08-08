@@ -1,0 +1,118 @@
+* {
+  font-size: 12px;
+}
+
+html, body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(images/ToDo8.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  margin: 150px auto;
+  padding: 50px;
+  width: 70%;
+  border-radius: 1.5%;
+  border: 1px solid gainsboro;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.h1 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#new-tache {
+  width: 88%;
+}
+
+li {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 10px;
+  padding: 0;
+}
+
+li button {
+  border: 1px solid black;
+  font-size: 10px;
+  height: 5%;
+  margin-left: 10px;
+}
+
+li span {
+  margin-right: 10px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 5px 5px;
+  margin: 0 5px;
+  border-radius: 0%;
+}
+
+li span:first-child {
+  margin-right: 10px;
+}
+
+.tache-terminee .tache-nom {
+  text-decoration: line-through;
+  background-color: rgba(173, 255, 47, 0.5);
+}
+
+.tache-archivee {
+  display: none;
+}
+
+.filtre {
+  display: flex;
+}
+
+#alert {
+  width: 100%;
+  height: 10%;
+  background-color: red;
+  color: white;
+}
+
+.close-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.masque {
+  width: 100%;
+}
+
+.tache-archivee {
+  display: none;
+}
+
+.tache-cachee {
+  display: none;
+}
+img[alt="ajouter logo"]{
+  width: 25px;
+  height: 25px;
+}
